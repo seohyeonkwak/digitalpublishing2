@@ -1,0 +1,320 @@
+body {
+    margin: 0;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    /* 스크롤바 숨기기 */
+    display: none;
+}
+#container {
+    box-sizing: border-box;
+    width: 100vw;
+    padding: 0;
+    margin: 0 auto;
+    background-color: black;
+    color: #A9A9A9;
+    font-family: "Pretendard";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 36px */
+    letter-spacing: -0.72px;
+    overflow: hidden;
+}
+p {
+    margin: 0px;
+}
+#header {
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    height: 65vw;
+}
+#header > * {
+    position: absolute;
+}
+#header #glitch {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url('../img/glitch/a.png'); /* 초기 이미지 경로 */
+    border: 1px solid red;
+}
+#header #human {
+    width: 77%;
+    height: 103%;
+    left: 10%;
+    top: -1%;
+}
+#header #youtubeLogo {
+    width: 36%;
+    height: 42%;
+    top: 15%;
+    left: 31%;
+}
+#header #ellipse {
+    width: 31%;
+    height: 35%;
+    top: 18%;
+    left: 34%;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(0, 0, 0, 0.50) 77.5%);
+    border-radius: 600px;
+}
+#header #humanHand {
+    width: 77%;
+    height: 67%;
+    top: 34%;
+    left: 10%;
+}
+#header #slash1 {
+    top: 6%;
+}
+#header #slash2 {
+    top: 46%;
+}
+#header #slash3 {
+    top: 30%;
+}
+#header marquee {
+    width: 103%;
+    top: 51%;
+    left: -1%;
+    color: #000;
+    font-family: "Elice Digital Baeum";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 90px */
+    letter-spacing: -1.8px;
+    transform: rotate(12.394deg);
+}
+#header #title {
+    top: 15%;
+    left: 29%;
+}
+#header #cover {
+    width: 2%;
+    height: 2%;
+    bottom: 0px;
+    left: 46%;
+    background-color: #000;
+}
+#header #hitbox {
+    width: 100%;
+    height: 100%;
+    border: 1px solid blue;
+}
+.title-yellow {
+    color: #FBC010;
+    font-family: "Elice Digital Baeum";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 45px */
+    letter-spacing: -0.9px;
+    margin-left: 18%;
+}
+.title-white {
+    margin-bottom: 2%;
+    color: #FFF;
+    font-family: "Elice Digital Baeum";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 60px */
+    letter-spacing: -1.2px;
+}
+#distrust {
+    display: flex;
+    height: 481px;
+    padding-top: 38px;
+    padding-left: 18%;
+}
+#distrust img {
+    width: 23%;
+    height: 15vw;
+    margin-top: 17px;
+    margin-right: 3%;
+}
+#justice {
+    box-sizing: border-box;
+    height: 42vw;
+    padding-top: 7vw;
+    padding-left: 18%;
+    background-image: url("../img/crowd.png");
+    background-size : 100% 100%;
+}
+.title-slash-line {
+    position: relative;
+}
+.title-slash-line > svg {
+    width: 104%;
+}
+.title-slash-line .title-black {
+    position: absolute;
+    top: 26px;
+    color: #000;
+    text-align: center;
+    font-family: "Elice Digital Baeum";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 60px */
+    letter-spacing: -1.2px;
+}
+#abolition .title-slash-line .title-black  {
+    left: 34%;
+}
+#running .title-slash-line .title-black  {
+    left: 37%;
+}
+#viewpoint .title-slash-line .title-black  {
+    left: 35%;
+}
+.youtubers {
+    margin-top: 66px;
+}
+.youtubers > .channel {
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    height: 239px;
+    padding-top: 2vw;
+    padding-left: 13%;
+    /* background-color: #FBC010; */
+    color: #030303;
+    font-family: "Pretendard";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */
+    letter-spacing: -0.72px;
+    /* border: 1px solid red; */
+}
+.youtubers > .channel > .left_channel {
+    width: 44%;
+    height: 12vw;
+    position: absolute;
+    top: -1px;
+    left: 8%;
+    /* z-index: 3; */
+}
+.youtubers > .channel > .right_channel {
+    width: 44%;
+    height: 12vw;
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    /* z-index: 3; */
+}
+.youtubers > .channel > .profile {
+    width: 8%;
+    height: 7vw;
+    /* margin-left: 84px; */
+    margin-left: 6%;
+    margin-right: 2vw;
+    z-index: 1;
+}
+.youtubers > .channel > #arrestMark {
+    position: absolute;
+    width: 10%;
+    height: 8vw;
+    top: -1vw;
+    left: 14%;
+    transform: rotate(-20.683deg);
+    z-index: 2;
+}
+.youtubers > .channel > #prosecutionMark {
+    position: absolute;
+    width: 9%;
+    height: 7vw;
+    top: -1vw;
+    left: 51%;
+    transform: rotate(-21.244deg);
+    z-index: 2;
+}
+.youtubers > .channel > div {
+    z-index: 0;
+}
+.youtubers > .channel .youtube-name {
+    margin-bottom: 15px;
+    color: #030303;
+    font-family: "Elice Digital Baeum";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: -1.92px;
+}
+.youtubers > .channel .text-white {
+    color: #FFF;
+}
+.youtube {
+    display: grid;
+    grid-template-columns: 588px 588px;
+    grid-template-rows: 329px 329px;
+    gap: 73px 24px;
+    width: 1200px;
+    height: 731px;
+    margin: 92px auto 42px auto;
+    color: #A9A9A9;
+    font-family: "Pretendard";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 30px */
+    letter-spacing: -0.6px;
+}
+#good {
+    padding: 8vw 0 1vw 18vw;
+}
+#good > .title-yellow {
+    margin-left: 0px;
+    margin-bottom: 3vw;
+}
+#good > .image {
+    width: 82%;
+}
+#good > .title-white {
+    margin-top: 3%;
+    margin-bottom: 56px;
+}
+#bad {
+    padding: 8vw 0 8vw 18vw;
+}
+#bad > .title-yellow {
+    margin-left: 0px;
+    margin-bottom: 3vw;
+}
+#bad > div {
+    display: flex;
+}
+#bad > #unclear {
+    margin-bottom: 6vw;
+}
+#bad > #unclear .image {
+    width: 14%;
+    margin-right: 5%;
+}
+#bad > #unclear div {
+    padding-top: 4px;
+}
+#bad > #personal .image {
+    width: 14%;
+    height: 13vw;
+    margin-top: 1%;
+    margin-right: 5%;
+}
+#footer {
+    width: 100%;
+    height: 6vw;
+    background: #101010;
+    color: #747474;
+    text-align: center;
+    font-family: "Pretendard";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 116px; /* 24px */
+    letter-spacing: -0.48px;
+}
